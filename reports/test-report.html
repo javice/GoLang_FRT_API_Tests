@@ -1,0 +1,650 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reporte HTML de Pruebas E2E en FreeRangeTesters</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .test { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+            .pass { background-color: #e8f5e9; }
+            .fail { background-color: #ffebee; }
+            .log { background-color: #f5f5f5; padding: 10px; margin-top: 10px; font-family: monospace; }
+            .timestamp { color: #666; font-size: 0.9em; }
+            .duration { color: #666; font-style: italic; }
+            .error { color: red; margin-top: 10px; }
+            .subtest { margin-left: 20px; }
+            .running { color: yellow; }
+        </style>
+    </head>
+    <body>
+        <h1>Reporte HTML de Pruebas API en JsonPlaceholder</h1>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 posts_test.go:52: 🚀 Iniciando GET Todos los Posts - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.04s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 posts_test.go:54: 📡 Accediendo al Endpoint : /posts<br>
+                
+                2025/02/19 13:46:53 posts_test.go:76: 📊 Posts obtenidos: 100<br>
+                
+                2025/02/19 13:46:53 posts_test.go:77: ✅ Test GET Todos los Posts completado en 0.04<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 users_test.go:106: 🚀 Iniciando GET Albums de un Usuario por ID - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.03s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 users_test.go:108: 📡 Accediendo al Endpoint : /users/1/albums<br>
+                
+                2025/02/19 13:46:53 users_test.go:130: 📊 Albums totales: 10<br>
+                
+                2025/02/19 13:46:53 users_test.go:131: ✅ Test GET Albums de un Usuario por ID completado en 0.03<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:54 users_test.go:360: 🚀 Iniciando PATCH Actualizar Usuario - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.13s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:54 users_test.go:362: 📡 Accediendo al Endpoint : /users<br>
+                
+                2025/02/19 13:46:54 users_test.go:390: 📊 DATOS DEL USUARIO MODIFICADO PARCIALMENTE CON METODO PATCH:<br>
+                
+                2025/02/19 13:46:54 users_test.go:391: 🙋🏻‍♂️ Nombre: Pepito Modificado Patch<br>
+                
+                2025/02/19 13:46:54 users_test.go:392: 📨 Email: pepito.modificado.patch@prueba.com<br>
+                
+                2025/02/19 13:46:54 users_test.go:393: ✍🏼 User name: pepitoPruebaTestModificadoPatch<br>
+                
+                2025/02/19 13:46:54 users_test.go:394: ✅ Test PATCH Actualizar Usuario completado en 0.13<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:52 photos_test.go:219: 🚀 Iniciando PATCH Actualizamos una Foto - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.14s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:52 photos_test.go:221: 📡 Accediendo al Endpoint : /photos/1<br>
+                
+                2025/02/19 13:46:52 photos_test.go:249: ℹ️ ID de la FOTO: 0<br>
+                
+                2025/02/19 13:46:52 photos_test.go:250: ℹ️ ID del ALBUM: 0<br>
+                
+                2025/02/19 13:46:52 photos_test.go:251: 📷 TITULO de la FOTO: Foto de Prueba Modificada CON PATCH<br>
+                
+                2025/02/19 13:46:52 photos_test.go:252: 🌏 URL de la FOTO: https://via.placeholder.com/600/92c952<br>
+                
+                2025/02/19 13:46:52 photos_test.go:253: 🌏 URL de la miniatura de la FOTO: https://via.placeholder.com/150/92c952<br>
+                
+                2025/02/19 13:46:52 photos_test.go:254: ✅ Test PATCH Actualizamos una Foto completado en 0.14<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:52 photos_test.go:260: 🚀 Iniciando DELETE Eliminamos una Foto - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.14s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:52 photos_test.go:262: 📡 Accediendo al Endpoint : /photos/1<br>
+                
+                2025/02/19 13:46:53 photos_test.go:271: ✅ Test DELETE Eliminamos una Foto completado en 0.14<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 posts_test.go:194: 🚀 Iniciando PUT Actualizamos la totalidad de un Post - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.34s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 posts_test.go:196: 📡 Accediendo al Endpoint : /posts/1<br>
+                
+                2025/02/19 13:46:53 posts_test.go:223: 📊 NUEVO POST MODIFICADO:<br>
+                
+                2025/02/19 13:46:53 posts_test.go:224: 📝 ID del post: 1<br>
+                
+                2025/02/19 13:46:53 posts_test.go:225: 📝 USER ID del post: 2<br>
+                
+                2025/02/19 13:46:53 posts_test.go:226: 📝 TITULO del post: Post de Prueba Modificado<br>
+                
+                2025/02/19 13:46:53 posts_test.go:227: 📝 CONTENIDO del post: Cuerpo Modificado del Post<br>
+                
+                2025/02/19 13:46:53 posts_test.go:228: ✅ Test PUT Actualizamos la totalidad de un Post completado en 0.34<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 posts_test.go:273: 🚀 Iniciando DELETE Borramos un Post - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.13s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 posts_test.go:276: 📡 Accediendo al Endpoint : /posts/1<br>
+                
+                2025/02/19 13:46:53 posts_test.go:285: 📊 POST BORRADO OK<br>
+                
+                2025/02/19 13:46:53 posts_test.go:286: ✅ Test DELETE Borramos un Post completado en 0.13<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 users_test.go:67: 🚀 Iniciando GET Un Usuario por ID - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.02s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 users_test.go:69: 📡 Accediendo al Endpoint : /users/1<br>
+                
+                2025/02/19 13:46:53 users_test.go:91: 📊 Usuario Encontrado: 1<br>
+                
+                2025/02/19 13:46:53 users_test.go:92: 🙋🏻‍♂️ Nombre: Leanne Graham<br>
+                
+                2025/02/19 13:46:53 users_test.go:93: 📨 Email: Sincere@april.biz<br>
+                
+                2025/02/19 13:46:53 users_test.go:94: ✍🏼 User name: Bret<br>
+                
+                2025/02/19 13:46:53 users_test.go:95: 🏠 Dirección completa: Kulas Light Apt. 556 Gwenborough 92998-3874 -37.3159 81.1496 <br>
+                
+                2025/02/19 13:46:53 users_test.go:96: 📞 Teléfono: 1-770-736-8031 x56442<br>
+                
+                2025/02/19 13:46:53 users_test.go:97: 🌐 Web: hildegard.org<br>
+                
+                2025/02/19 13:46:53 users_test.go:98: 🏢 Empresa: Romaguera-Crona Multi-layered client-server neural-net harness real-time e-markets<br>
+                
+                2025/02/19 13:46:53 users_test.go:99: ✅ Test GET Usuario por ID completado en 0.02<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:54 users_test.go:203: 🚀 Iniciando POST Crear Usuario - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.14s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:54 users_test.go:205: 📡 Accediendo al Endpoint : /users<br>
+                
+                2025/02/19 13:46:54 users_test.go:267: 📊 DATOS DEL NUEVO USUARIO:<br>
+                
+                2025/02/19 13:46:54 users_test.go:268: 📊 Usuario Encontrado: 11<br>
+                
+                2025/02/19 13:46:54 users_test.go:269: 🙋🏻‍♂️ Nombre: Pepito Prueba<br>
+                
+                2025/02/19 13:46:54 users_test.go:270: 📨 Email: pepito@prueba.com<br>
+                
+                2025/02/19 13:46:54 users_test.go:271: ✍🏼 User name: pepitoPruebaTest<br>
+                
+                2025/02/19 13:46:54 users_test.go:272: 🏠 Dirección completa: Paseo de Los Melancólicos 10 2-DCHA Madrid 28010 12345 67890 <br>
+                
+                2025/02/19 13:46:54 users_test.go:273: 📞 Teléfono: 913233480<br>
+                
+                2025/02/19 13:46:54 users_test.go:274: 🌐 Web: www.pepito.com<br>
+                
+                2025/02/19 13:46:54 users_test.go:275: 🏢 Empresa: Pepito Corp Pepe Pepito Bs de Pepito<br>
+                
+                2025/02/19 13:46:54 users_test.go:276: ✅ Test POST Crear Usuario completado en 0.14<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 posts_test.go:234: 🚀 Iniciando PATCH Actualizamos una parte de un Post - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.15s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 posts_test.go:236: 📡 Accediendo al Endpoint : /posts/1<br>
+                
+                2025/02/19 13:46:53 posts_test.go:261: 📊 NUEVO POST MODIFICADO PARCIALMENTE:<br>
+                
+                2025/02/19 13:46:53 posts_test.go:262: 📝 ID del post: 0<br>
+                
+                2025/02/19 13:46:53 posts_test.go:263: 📝 USER ID del post: 0<br>
+                
+                2025/02/19 13:46:53 posts_test.go:264: 📝 TITULO del post: Post de Prueba Modificado CON PATCH<br>
+                
+                2025/02/19 13:46:53 posts_test.go:265: 📝 CONTENIDO del post: Cuerpo Modificado del Post CON PATCH<br>
+                
+                2025/02/19 13:46:53 posts_test.go:266: ✅ Test PATCH Actualizamos una parte de un Post completado en 0.15<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 users_test.go:36: 🚀 Iniciando GET Todos los Usuarios - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.03s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 users_test.go:38: 📡 Accediendo al Endpoint : /users<br>
+                
+                2025/02/19 13:46:53 users_test.go:60: 📊 Usuarios totales: 10<br>
+                
+                2025/02/19 13:46:53 users_test.go:61: ✅ Test GET Todos los Usuarios completado en 0.03<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:51 photos_test.go:64: 🚀 Iniciando GET Photo con ID=1 - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.52s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:51 photos_test.go:66: 📡 Accediendo al Endpoint : /photos/1<br>
+                
+                2025/02/19 13:46:51 photos_test.go:88: ℹ️ ID de la FOTO: 1<br>
+                
+                2025/02/19 13:46:51 photos_test.go:89: ℹ️ ID del ALBUM: 1<br>
+                
+                2025/02/19 13:46:51 photos_test.go:90: 📷 TITULO de la FOTO: accusamus beatae ad facilis cum similique qui sunt<br>
+                
+                2025/02/19 13:46:51 photos_test.go:91: 🌏 URL de la FOTO: https://via.placeholder.com/600/92c952<br>
+                
+                2025/02/19 13:46:51 photos_test.go:92: 🌏 URL de la miniatura de la FOTO: https://via.placeholder.com/150/92c952<br>
+                
+                2025/02/19 13:46:51 photos_test.go:93: ✅ Test GET Un Photo por ID completado en 0.52<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:51 photos_test.go:99: 🚀 Iniciando GET Fotos de un Album por ID - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.65s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:51 photos_test.go:101: 📡 Accediendo al Endpoint : /albums/1/photos<br>
+                
+                2025/02/19 13:46:52 photos_test.go:123: 📊 Total de fotos: 50<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 1 del album: accusamus beatae ad facilis cum similique qui sunt<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 2 del album: reprehenderit est deserunt velit ipsam<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 3 del album: officia porro iure quia iusto qui ipsa ut modi<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 4 del album: culpa odio esse rerum omnis laboriosam voluptate repudiandae<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 5 del album: natus nisi omnis corporis facere molestiae rerum in<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 6 del album: accusamus ea aliquid et amet sequi nemo<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 7 del album: officia delectus consequatur vero aut veniam explicabo molestias<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 8 del album: aut porro officiis laborum odit ea laudantium corporis<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 9 del album: qui eius qui autem sed<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 10 del album: beatae et provident et ut vel<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 11 del album: nihil at amet non hic quia qui<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 12 del album: mollitia soluta ut rerum eos aliquam consequatur perspiciatis maiores<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 13 del album: repudiandae iusto deleniti rerum<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 14 del album: est necessitatibus architecto ut laborum<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 15 del album: harum dicta similique quis dolore earum ex qui<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 16 del album: iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 17 del album: natus doloribus necessitatibus ipsa<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 18 del album: laboriosam odit nam necessitatibus et illum dolores reiciendis<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 19 del album: perferendis nesciunt eveniet et optio a<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 20 del album: assumenda voluptatem laboriosam enim consequatur veniam placeat reiciendis error<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 21 del album: ad et natus qui<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 22 del album: et ea illo et sit voluptas animi blanditiis porro<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 23 del album: harum velit vero totam<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 24 del album: beatae officiis ut aut<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 25 del album: facere non quis fuga fugit vitae<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 26 del album: asperiores nobis voluptate qui<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 27 del album: sit asperiores est quos quis nisi veniam error<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 28 del album: non neque eligendi molestiae repudiandae illum voluptatem qui aut<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 29 del album: aut ipsam quos ab placeat omnis<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 30 del album: odio enim voluptatem quidem aut nihil illum<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 31 del album: voluptate voluptates sequi<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 32 del album: ad enim dignissimos voluptatem similique<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 33 del album: culpa ipsam nobis qui fuga magni et mollitia<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 34 del album: vitae est facere quia itaque adipisci perferendis id maiores<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 35 del album: tenetur minus voluptatum et<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 36 del album: expedita rerum eaque<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 37 del album: totam voluptas iusto deserunt dolores<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 38 del album: natus magnam iure rerum pariatur molestias dolore nisi<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 39 del album: molestiae nam ullam et rerum doloribus<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 40 del album: est quas voluptates dignissimos sint praesentium nisi recusandae<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 41 del album: in voluptatem doloremque cum atque architecto deleniti<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 42 del album: voluptatibus a autem molestias voluptas architecto culpa<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 43 del album: eius hic autem ad beatae voluptas<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 44 del album: neque eum provident et inventore sed ipsam dignissimos quo<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 45 del album: praesentium fugit quis aut voluptatum commodi dolore corrupti<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 46 del album: quidem maiores in quia fugit dolore explicabo occaecati<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 47 del album: et soluta est<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 48 del album: ut esse id<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 49 del album: quasi quae est modi quis quam in impedit<br>
+                
+                2025/02/19 13:46:52 photos_test.go:125: 📷 FOTO 50 del album: et inventore quae ut tempore eius voluptatum<br>
+                
+                2025/02/19 13:46:52 photos_test.go:127: ✅ Test GET Fotos de un Album por ID completado en 0.65<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:52 photos_test.go:176: 🚀 Iniciando PUT Actualizamos una Foto - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.14s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:52 photos_test.go:178: 📡 Accediendo al Endpoint : /photos/1<br>
+                
+                2025/02/19 13:46:52 photos_test.go:208: ℹ️ ID de la FOTO: 1<br>
+                
+                2025/02/19 13:46:52 photos_test.go:209: ℹ️ ID del ALBUM: 1<br>
+                
+                2025/02/19 13:46:52 photos_test.go:210: 📷 TITULO de la FOTO: Foto de Prueba Modificada<br>
+                
+                2025/02/19 13:46:52 photos_test.go:211: 🌏 URL de la FOTO: https://via.placeholder.com/600/92c952<br>
+                
+                2025/02/19 13:46:52 photos_test.go:212: 🌏 URL de la miniatura de la FOTO: https://via.placeholder.com/150/92c952<br>
+                
+                2025/02/19 13:46:52 photos_test.go:213: ✅ Test PUT Actualizamos una Foto completado en 0.14<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 posts_test.go:84: 🚀 Iniciando GET Post con ID=1 - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.03s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 posts_test.go:86: 📡 Accediendo al Endpoint : /posts/1<br>
+                
+                2025/02/19 13:46:53 posts_test.go:108: 📝 ID del post: 1<br>
+                
+                2025/02/19 13:46:53 posts_test.go:109: 📝 USER ID del post: 1<br>
+                
+                2025/02/19 13:46:53 posts_test.go:110: 📝 TITULO del post: sunt aut facere repellat provident occaecati excepturi optio reprehenderit<br>
+                
+                2025/02/19 13:46:53 posts_test.go:111: 📝 CONTENIDO del post: quia et suscipit<br>
+                
+                suscipit recusandae consequuntur expedita et cum<br>
+                
+                reprehenderit molestiae ut ut quas totam<br>
+                
+                nostrum rerum est autem sunt rem eveniet architecto<br>
+                
+                2025/02/19 13:46:53 posts_test.go:112: ✅ Test GET Un Post por ID completado en 0.03<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 posts_test.go:118: 🚀 Iniciando GET Comentarios de un Post por ID - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.03s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 posts_test.go:120: 📡 Accediendo al Endpoint : /posts/1/comments<br>
+                
+                2025/02/19 13:46:53 posts_test.go:142: 📊 Total de comentarios: 5<br>
+                
+                2025/02/19 13:46:53 posts_test.go:144: 📝 COMENTARIO 1 del post: laudantium enim quasi est quidem magnam voluptate ipsam eos<br>
+                
+                tempora quo necessitatibus<br>
+                
+                dolor quam autem quasi<br>
+                
+                reiciendis et nam sapiente accusantium<br>
+                
+                2025/02/19 13:46:53 posts_test.go:144: 📝 COMENTARIO 2 del post: est natus enim nihil est dolore omnis voluptatem numquam<br>
+                
+                et omnis occaecati quod ullam at<br>
+                
+                voluptatem error expedita pariatur<br>
+                
+                nihil sint nostrum voluptatem reiciendis et<br>
+                
+                2025/02/19 13:46:53 posts_test.go:144: 📝 COMENTARIO 3 del post: quia molestiae reprehenderit quasi aspernatur<br>
+                
+                aut expedita occaecati aliquam eveniet laudantium<br>
+                
+                omnis quibusdam delectus saepe quia accusamus maiores nam est<br>
+                
+                cum et ducimus et vero voluptates excepturi deleniti ratione<br>
+                
+                2025/02/19 13:46:53 posts_test.go:144: 📝 COMENTARIO 4 del post: non et atque<br>
+                
+                occaecati deserunt quas accusantium unde odit nobis qui voluptatem<br>
+                
+                quia voluptas consequuntur itaque dolor<br>
+                
+                et qui rerum deleniti ut occaecati<br>
+                
+                2025/02/19 13:46:53 posts_test.go:144: 📝 COMENTARIO 5 del post: harum non quasi et ratione<br>
+                
+                tempore iure ex voluptates in ratione<br>
+                
+                harum architecto fugit inventore cupiditate<br>
+                
+                voluptates magni quo et<br>
+                
+                2025/02/19 13:46:53 posts_test.go:146: ✅ Test GET Comentarios de un Post por ID completado en 0.03<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 posts_test.go:153: 🚀 Iniciando POST Creamos un nuevo Post - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.13s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 posts_test.go:155: 📡 Accediendo al Endpoint : /posts/1/comments<br>
+                
+                2025/02/19 13:46:53 posts_test.go:183: 📊 NUEVO POST CREADO:<br>
+                
+                2025/02/19 13:46:53 posts_test.go:184: 📝 ID del post: 101<br>
+                
+                2025/02/19 13:46:53 posts_test.go:185: 📝 USER ID del post: 1<br>
+                
+                2025/02/19 13:46:53 posts_test.go:186: 📝 TITULO del post: Nuevo Post de Prueba<br>
+                
+                2025/02/19 13:46:53 posts_test.go:187: 📝 CONTENIDO del post: Cuerpo del nuevo Post<br>
+                
+                2025/02/19 13:46:53 posts_test.go:188: ✅ Test POST Creamos un nuevo Post completado en 0.13<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:53 users_test.go:138: 🚀 Iniciando GET Todos de un Usuario por ID - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.03s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:53 users_test.go:140: 📡 Accediendo al Endpoint : /users/1/todos<br>
+                
+                2025/02/19 13:46:54 users_test.go:162: 📊 Todos totales: 20<br>
+                
+                2025/02/19 13:46:54 users_test.go:163: ✅ Test GET Todos de un Usuario por ID completado en 0.03<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:54 users_test.go:170: 🚀 Iniciando GET Posts de un Usuario por ID - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.03s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:54 users_test.go:172: 📡 Accediendo al Endpoint : /users/1/posts<br>
+                
+                2025/02/19 13:46:54 users_test.go:194: 🙋🏻‍♂️ Usuario: 1<br>
+                
+                2025/02/19 13:46:54 users_test.go:195: 📊 Posts totales: 10<br>
+                
+                2025/02/19 13:46:54 users_test.go:196: ✅ Test GET Posts de un Usuario por ID completado en 0.03<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:54 users_test.go:283: 🚀 Iniciando PUT Actualizar Usuario - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.38s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:54 users_test.go:285: 📡 Accediendo al Endpoint : /users<br>
+                
+                2025/02/19 13:46:54 users_test.go:346: 📊 DATOS DEL USUARIO MODIFICADO:<br>
+                
+                2025/02/19 13:46:54 users_test.go:347: 🙋🏻‍♂️ Nombre: Pepito Modificado<br>
+                
+                2025/02/19 13:46:54 users_test.go:348: 📨 Email: pepito.modificado@prueba.com<br>
+                
+                2025/02/19 13:46:54 users_test.go:349: ✍🏼 User name: pepitoPruebaTestModificado<br>
+                
+                2025/02/19 13:46:54 users_test.go:350: 🏠 Dirección completa: Calle San Epifanio 5  2-DCHA Madrid 28009 11111 22222 <br>
+                
+                2025/02/19 13:46:54 users_test.go:351: 📞 Teléfono: 913233481<br>
+                
+                2025/02/19 13:46:54 users_test.go:352: 🌐 Web: www.pepito.modificado.com<br>
+                
+                2025/02/19 13:46:54 users_test.go:353: 🏢 Empresa: Pepito Corp V2 Pepe Pepito Pepe Bs de Pepito Modificado<br>
+                
+                2025/02/19 13:46:54 users_test.go:354: ✅ Test PUT Actualizar Usuario completado en 0.38<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:51 photos_test.go:32: 🚀 Iniciando GET Todas las Fotos - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.14s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:51 photos_test.go:34: 📡 Accediendo al Endpoint : /photos<br>
+                
+                2025/02/19 13:46:51 photos_test.go:56: 📊 Total de fotos: 100<br>
+                
+                2025/02/19 13:46:51 photos_test.go:57: ✅ Test GET Todas las FOTOS completado en 0.14<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:52 photos_test.go:133: 🚀 Iniciando POST Creamos una nueva Foto - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.34s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:52 photos_test.go:135: 📡 Accediendo al Endpoint : /photos<br>
+                
+                2025/02/19 13:46:52 photos_test.go:165: ℹ️ ID de la FOTO: 5001<br>
+                
+                2025/02/19 13:46:52 photos_test.go:166: ℹ️ ID del ALBUM: 1<br>
+                
+                2025/02/19 13:46:52 photos_test.go:167: 📷 TITULO de la FOTO: Nueva Foto de Prueba<br>
+                
+                2025/02/19 13:46:52 photos_test.go:168: 🌏 URL de la FOTO: https://via.placeholder.com/600/92c952<br>
+                
+                2025/02/19 13:46:52 photos_test.go:169: 🌏 URL de la miniatura de la FOTO: https://via.placeholder.com/150/92c952<br>
+                
+                2025/02/19 13:46:52 photos_test.go:170: ✅ Test POST Creamos una nueva Foto completado en 0.34<br>
+                
+            </div>
+            
+        </div>
+        
+        <div class="test">
+            <h2>2025/02/19 13:46:54 users_test.go:400: 🚀 Iniciando DELETE Borrar Usuario - <span class="✅ pass">✅ PASS</span></h2>
+            <p class="timestamp">Inicio: 2025-02-19 13:46:55</p>
+            <p class="duration">Duración: 0.13s</p>
+            <div class="log">
+                
+                2025/02/19 13:46:54 users_test.go:402: 📡 Accediendo al Endpoint : /users/1<br>
+                
+                2025/02/19 13:46:54 users_test.go:411: ✅ Test DELETE Borrar Usuario completado en 0.13<br>
+                
+            </div>
+            
+        </div>
+        
+    </body>
+    </html>
+    
