@@ -20,7 +20,7 @@
 
 # Archivos de dependencias de Go
 vendor/
-*.mod
+
 
 # Archivos de sistema
 .DS_Store
